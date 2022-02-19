@@ -3,4 +3,141 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* - - - - - main section styling - - - - - */
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+            to bottom right,
+            rgba(230, 204, 167, 0.7),
+            rgba(205, 117, 145, 0.8)
+        ),
+        url("../images/banking.jpg");
+
+    /* - - - - - - main containter styling - - - - - */
+    .front-page {
+        width: 100%;
+        height: 100%;
+        padding: 3% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: linear-gradient(
+            to bottom right,
+            rgba(240, 230, 230, 0.2),
+            rgba(240, 230, 230, 0.2)
+        );
+        backdrop-filter: blur(0.2vw);
+
+        header {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                cursor: pointer;
+                h1 {
+                    color: #4b4a4a;
+                    letter-spacing: 0.05vw;
+                    font-size: 1.5vw;
+                    font-weight: 600;
+                }
+
+                span {
+                    color: #b37878;
+                }
+            }
+
+            .navlinks {
+                width: 60%;
+                padding: 2% 0;
+                ul {
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        font-size: 0.9vw;
+                        cursor: pointer;
+                        color: #4b4a4a;
+                        text-transform: capitalize;
+                        margin: 0 2%;
+                    }
+                }
+            }
+
+            .login {
+                button {
+                    cursor: pointer;
+                    text-transform: capitalize;
+                    font-size: 0.8vw;
+                    padding: 0.5vw 2vw;
+                    outline: none;
+                    border: none;
+                    border-radius: 0.3vw;
+                    color: #4b4a4a;
+                }
+            }
+        }
+
+        .hero-content {
+            width: 100%;
+            padding: 10% 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left {
+                width: 50%;
+                .text {
+                    color: #4b4a4a;
+                    h2 {
+                        font-size: 2.5vw;
+                        line-height: 4vw;
+                    }
+
+                    p {
+                        font-size: 0.9vw;
+                    }
+                }
+
+                .create-acc {
+                    button {
+                        margin-top: 5%;
+                        cursor: pointer;
+                        text-transform: capitalize;
+                        font-size: 0.8vw;
+                        padding: 0.8vw 2vw;
+                        outline: none;
+                        border: none;
+                        border-radius: 0.3vw;
+                        color: #4b4a4a;
+                    }
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2% 0;
+            svg {
+                cursor: pointer;
+                width: 1.5vw;
+                height: 1.5vw;
+                margin-right: 1.5%;
+                color: #4b4a4a;
+
+                :hover {
+                    color: #b37878;
+                }
+            }
+        }
+    }
 }
