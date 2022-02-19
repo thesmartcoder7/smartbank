@@ -91,7 +91,7 @@ main {
 
         .hero-content {
             width: 100%;
-            padding: 5% 0;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -143,11 +143,10 @@ main {
                 .card {
                     animation-name: fadeIn;
                     animation-duration: 1s;
-                    display: flex; //change this back to flex
+                    display: flex;
                     position: relative;
                     .main-card {
                         padding: 4% 5%;
-                        // position: absolute;
                         width: 25vw;
                         height: 15vw;
                         background: rgba(255, 255, 255, 0.3);
