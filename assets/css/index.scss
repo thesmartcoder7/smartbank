@@ -16,6 +16,8 @@ main {
             rgba(205, 117, 145, 0.8)
         ),
         url("../images/banking.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     /* - - - - - - main containter styling - - - - - */
     .front-page {
@@ -80,7 +82,7 @@ main {
                     cursor: pointer;
                     text-transform: capitalize;
                     font-size: 0.8vw;
-                    padding: 0.5vw 2vw;
+                    padding: 0.7vw 2vw;
                     outline: none;
                     border: none;
                     border-radius: 0.3vw;

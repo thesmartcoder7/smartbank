@@ -12,6 +12,8 @@ main {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(230, 204, 167, 0.7)), to(rgba(205, 117, 145, 0.8))), url("../images/banking.jpg");
   background-image: linear-gradient(to bottom right, rgba(230, 204, 167, 0.7), rgba(205, 117, 145, 0.8)), url("../images/banking.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   /* - - - - - - main containter styling - - - - - */
 }
 
@@ -99,7 +101,7 @@ main .front-page header .login button {
   cursor: pointer;
   text-transform: capitalize;
   font-size: 0.8vw;
-  padding: 0.5vw 2vw;
+  padding: 0.7vw 2vw;
   outline: none;
   border: none;
   border-radius: 0.3vw;
