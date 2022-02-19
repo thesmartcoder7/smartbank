@@ -127,6 +127,7 @@ main {
                 .card {
                     position: relative;
                     .main-card {
+                        padding: 3% 5%;
                         position: absolute;
                         width: 25vw;
                         height: 15vw;
@@ -142,6 +143,38 @@ main {
                         z-index: 2;
                         margin-top: -20%;
                         right: 10%;
+                        .logo {
+                            color: #b37878;
+                            font-size: 1vw;
+                        }
+                        .card-no {
+                            margin-top: 10%;
+                            margin-bottom: 7%;
+                            p {
+                                letter-spacing: 0.05vw;
+                                color: #b37878;
+                                font-size: 1.2vw;
+                            }
+                        }
+                        .valid {
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            font-size: 0.7vw;
+                            color: #777777;
+                            span {
+                                letter-spacing: 0.2vw;
+                            }
+                        }
+                        .acc-no {
+                            margin-top: 5%;
+                            font-size: 1vw;
+                            color: #b37878;
+                        }
+                        .name {
+                            font-size: 0.8vw;
+                            margin-top: 1%;
+                            color: #777777;
+                        }
                     }
 
                     .circle1 {

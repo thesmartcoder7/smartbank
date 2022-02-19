@@ -155,6 +155,7 @@ main .front-page .hero-content .right .card {
 }
 
 main .front-page .hero-content .right .card .main-card {
+  padding: 3% 5%;
   position: absolute;
   width: 25vw;
   height: 15vw;
@@ -168,6 +169,45 @@ main .front-page .hero-content .right .card .main-card {
   z-index: 2;
   margin-top: -20%;
   right: 10%;
+}
+
+main .front-page .hero-content .right .card .main-card .logo {
+  color: #b37878;
+  font-size: 1vw;
+}
+
+main .front-page .hero-content .right .card .main-card .card-no {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+main .front-page .hero-content .right .card .main-card .card-no p {
+  letter-spacing: 0.05vw;
+  color: #b37878;
+  font-size: 1.2vw;
+}
+
+main .front-page .hero-content .right .card .main-card .valid {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.7vw;
+  color: #777777;
+}
+
+main .front-page .hero-content .right .card .main-card .valid span {
+  letter-spacing: 0.2vw;
+}
+
+main .front-page .hero-content .right .card .main-card .acc-no {
+  margin-top: 5%;
+  font-size: 1vw;
+  color: #b37878;
+}
+
+main .front-page .hero-content .right .card .main-card .name {
+  font-size: 0.8vw;
+  margin-top: 1%;
+  color: #777777;
 }
 
 main .front-page .hero-content .right .card .circle1 {
