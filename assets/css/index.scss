@@ -88,7 +88,7 @@ main {
 
         .hero-content {
             width: 100%;
-            padding: 10% 0;
+            padding: 5% 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -122,16 +122,28 @@ main {
                 }
             }
 
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
             .right {
                 width: 50%;
+                height: auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 .card {
+                    animation-name: fadeIn;
+                    animation-duration: 1s;
                     display: flex; //change this back to flex
                     position: relative;
                     .main-card {
-                        padding: 3% 5%;
+                        padding: 4% 5%;
                         // position: absolute;
                         width: 25vw;
                         height: 15vw;
@@ -205,6 +217,8 @@ main {
                     }
                 }
                 .login-form {
+                    animation-name: fadeIn;
+                    animation-duration: 1s;
                     width: 70%;
                     height: auto;
                     display: none;
@@ -261,10 +275,13 @@ main {
                             margin-top: 10%;
                             width: 100%;
                             display: flex;
+                            justify-content: space-between;
+                            align-items: center;
                             div {
                                 margin: 0 5%;
                                 p {
                                     color: #4b4a4a;
+                                    font-size: 0.7vw;
                                 }
                                 button {
                                     cursor: pointer;
@@ -272,6 +289,88 @@ main {
                                     border: none;
                                     color: white;
                                     background: none;
+                                    font-size: 0.7vw;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .signup-form {
+                    animation-name: fadeIn;
+                    animation-duration: 1s;
+                    width: 70%;
+                    height: auto;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(
+                        to bottom right,
+                        rgba(255, 255, 255, 0.2),
+                        rgba(253, 173, 173, 0.2)
+                    );
+                    backdrop-filter: blur(1vw);
+                    padding: 5% 10%;
+                    border-radius: 1vw;
+                    border: solid 0.15vw rgba(240, 230, 230, 0.1);
+                    form {
+                        padding: 2%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        label {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            span {
+                                color: #fff;
+                                padding: 3% 0;
+                                font-size: 0.8vw;
+                            }
+                            input[type="text"],
+                            input[type="password"],
+                            input[type="email"] {
+                                outline: none;
+                                border: solid 0.1vw #fff;
+                                border-radius: 0.3vw;
+                                background-color: rgba(221, 170, 170, 0);
+                                padding: 4% 3%;
+                                margin-bottom: 10%;
+                                color: #fff;
+                                font-size: 0.8vw;
+                            }
+                        }
+                        input[type="submit"] {
+                            cursor: pointer;
+                            width: 30%;
+                            margin-top: 5%;
+                            padding: 3%;
+                            outline: none;
+                            border: none;
+                            border-radius: 0.3vw;
+                            font-size: 0.7vw;
+                            color: #4b4a4a;
+                        }
+                        .signup {
+                            margin-top: 10%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            div {
+                                margin: 0 5%;
+                                p {
+                                    color: #4b4a4a;
+                                    font-size: 0.7vw;
+                                }
+                                button {
+                                    cursor: pointer;
+                                    outline: none;
+                                    border: none;
+                                    color: white;
+                                    background: none;
+                                    font-size: 0.7vw;
                                 }
                             }
                         }

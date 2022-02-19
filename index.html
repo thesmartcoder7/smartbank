@@ -63,6 +63,8 @@
                             <div class="circle1"></div>
                             <div class="circle2"></div>
                         </div>
+
+                        <!-- login form -->
                         <div class="login-form">
                             <form action="">
                                 <label for="email">
@@ -86,7 +88,50 @@
                                     <div>
                                         <p>Don't have an account yet?</p>
                                     </div>
-                                    <div><button>Sign Up</button></div>
+                                    <div>
+                                        <button id="sign-up-link">
+                                            Sign Up
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- sign up form -->
+                        <div class="signup-form">
+                            <form action="">
+                                <label for="full-name">
+                                    <span>Full Name</span>
+                                    <input
+                                        type="text"
+                                        name="full-name"
+                                        id="fullname"
+                                    />
+                                </label>
+                                <label for="email">
+                                    <span>Email</span>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                    />
+                                </label>
+                                <label for="password">
+                                    <span>Password</span>
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                    />
+                                </label>
+                                <input type="submit" value="Sign Up" />
+                                <div class="signup">
+                                    <div>
+                                        <p>Already have an account?</p>
+                                    </div>
+                                    <div>
+                                        <button id="login-link">Login</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
