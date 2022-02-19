@@ -41,11 +41,14 @@ main {
 
             .logo {
                 cursor: pointer;
-                h1 {
-                    color: #4b4a4a;
-                    letter-spacing: 0.05vw;
-                    font-size: 1.5vw;
-                    font-weight: 600;
+                a {
+                    text-decoration: none;
+                    h1 {
+                        color: #4b4a4a;
+                        letter-spacing: 0.05vw;
+                        font-size: 1.5vw;
+                        font-weight: 600;
+                    }
                 }
 
                 span {
