@@ -103,6 +103,7 @@ main {
 
                     p {
                         font-size: 0.9vw;
+                        margin: 2% 0;
                     }
                 }
 
@@ -117,6 +118,55 @@ main {
                         border: none;
                         border-radius: 0.3vw;
                         color: #4b4a4a;
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+                .card {
+                    position: relative;
+                    .main-card {
+                        position: absolute;
+                        width: 25vw;
+                        height: 15vw;
+                        background: rgba(255, 255, 255, 0.3);
+                        background: linear-gradient(
+                            to bottom right,
+                            rgba(240, 230, 230, 0.5),
+                            rgba(240, 230, 230, 0.2)
+                        );
+                        backdrop-filter: blur(1vw);
+                        border-radius: 1vw;
+                        border: solid 0.15vw rgba(240, 230, 230, 0.1);
+                        z-index: 2;
+                        margin-top: -20%;
+                        right: 10%;
+                    }
+
+                    .circle1 {
+                        position: absolute;
+                        width: 20vw;
+                        height: 20vw;
+                        background: rgb(222, 184, 135);
+                        border-radius: 50%;
+                        top: 50%;
+                        right: 50%;
+                    }
+
+                    .circle2 {
+                        position: absolute;
+                        width: 10vw;
+                        height: 10vw;
+                        background: rgb(184, 68, 68);
+                        background: linear-gradient(
+                            to bottom left,
+                            rgba(240, 230, 230, 0.1),
+                            rgba(184, 68, 68, 1)
+                        );
+                        border-radius: 50%;
+                        margin-top: -30%;
+                        right: 0%;
                     }
                 }
             }
