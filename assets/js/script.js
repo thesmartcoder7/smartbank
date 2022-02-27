@@ -7,6 +7,7 @@ let signUpForm = document.querySelector(".signup-form");
 
 loginBtn.addEventListener("click", () => {
     card.style = "display: none;";
+    signUpForm.style = "display: none";
     loginForm.style = "display: flex;";
 });
 

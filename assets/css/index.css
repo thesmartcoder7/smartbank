@@ -210,42 +210,105 @@ main .front-page .hero-content .right .card .main-card {
 }
 
 main .front-page .hero-content .right .card .main-card .logo {
-  color: #b37878;
+  color: #777777;
   font-size: 1vw;
+}
+
+main .front-page .hero-content .right .card .main-card .logo span {
+  color: #b37878;
 }
 
 main .front-page .hero-content .right .card .main-card .card-no {
   margin-top: 10%;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 
 main .front-page .hero-content .right .card .main-card .card-no p {
   letter-spacing: 0.05vw;
   color: #b37878;
   font-size: 1.2vw;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
 }
 
 main .front-page .hero-content .right .card .main-card .valid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .front-page .hero-content .right .card .main-card .valid .chip svg {
+  width: 2.5vw;
+  height: 2.5vw;
+  color: #777777a1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+main .front-page .hero-content .right .card .main-card .valid .wifi svg {
+  width: 1vw;
+  height: 1vw;
+  color: #777777a1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+main .front-page .hero-content .right .card .main-card .valid .text {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.7vw;
+  margin-left: 5%;
   color: #777777;
 }
 
-main .front-page .hero-content .right .card .main-card .valid span {
+main .front-page .hero-content .right .card .main-card .valid .text span {
   letter-spacing: 0.2vw;
 }
 
-main .front-page .hero-content .right .card .main-card .acc-no {
-  margin-top: 5%;
-  font-size: 1vw;
-  color: #b37878;
+main .front-page .hero-content .right .card .main-card .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3%;
 }
 
-main .front-page .hero-content .right .card .main-card .name {
+main .front-page .hero-content .right .card .main-card .name .holder-name {
   font-size: 0.8vw;
-  margin-top: 2%;
   color: #777777;
+}
+
+main .front-page .hero-content .right .card .main-card .name .holder-name .acc-no {
+  font-size: 0.9vw;
+  color: #b37878;
+  padding-bottom: 3%;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  letter-spacing: 0.2vw;
+}
+
+main .front-page .hero-content .right .card .main-card .name .master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 3vw;
+  height: 3vw;
+  color: #77777779;
+  margin-bottom: -2%;
 }
 
 main .front-page .hero-content .right .card .circle1 {
@@ -329,7 +392,9 @@ main .front-page .hero-content .right .login-form form label input[type="passwor
 main .front-page .hero-content .right .login-form form label input[type="email"] {
   outline: none;
   border: solid 0.1vw #fff;
-  border-radius: 0.3vw;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   background-color: rgba(221, 170, 170, 0);
   padding: 4% 3%;
   margin-bottom: 10%;
@@ -441,7 +506,9 @@ main .front-page .hero-content .right .signup-form form label input[type="passwo
 main .front-page .hero-content .right .signup-form form label input[type="email"] {
   outline: none;
   border: solid 0.1vw #fff;
-  border-radius: 0.3vw;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   background-color: rgba(221, 170, 170, 0);
   padding: 4% 3%;
   margin-bottom: 10%;

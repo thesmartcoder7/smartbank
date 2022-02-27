@@ -162,36 +162,80 @@ main {
                         border: solid 0.15vw rgba(240, 230, 230, 0.1);
                         z-index: 2;
                         .logo {
-                            color: #b37878;
+                            color: #777777;
                             font-size: 1vw;
+                            span {
+                                color: #b37878;
+                            }
                         }
                         .card-no {
                             margin-top: 10%;
-                            margin-bottom: 7%;
+                            margin-bottom: 5%;
                             p {
                                 letter-spacing: 0.05vw;
                                 color: #b37878;
                                 font-size: 1.2vw;
+                                font-family: "Courier New", monospace;
+                                font-weight: 600;
                             }
                         }
                         .valid {
-                            text-transform: uppercase;
-                            font-weight: 500;
-                            font-size: 0.7vw;
-                            color: #777777;
-                            span {
-                                letter-spacing: 0.2vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            .chip {
+                                svg {
+                                    width: 2.5vw;
+                                    height: 2.5vw;
+                                    color: #777777a1;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            .wifi {
+                                svg {
+                                    width: 1vw;
+                                    height: 1vw;
+                                    color: #777777a1;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            .text {
+                                text-transform: uppercase;
+                                font-weight: 500;
+                                font-size: 0.7vw;
+                                margin-left: 5%;
+                                color: #777777;
+                                span {
+                                    letter-spacing: 0.2vw;
+                                }
                             }
                         }
-                        .acc-no {
-                            margin-top: 5%;
-                            font-size: 1vw;
-                            color: #b37878;
-                        }
+
                         .name {
-                            font-size: 0.8vw;
-                            margin-top: 2%;
-                            color: #777777;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+                            margin-top: 3%;
+                            .holder-name {
+                                font-size: 0.8vw;
+                                color: #777777;
+                                .acc-no {
+                                    font-size: 0.9vw;
+                                    color: #b37878;
+                                    padding-bottom: 3%;
+                                    font-family: "Courier New", monospace;
+                                    font-weight: 600;
+                                    letter-spacing: 0.2vw;
+                                }
+                            }
+                            .master {
+                                display: flex;
+                                align-items: flex-end;
+                                width: 3vw;
+                                height: 3vw;
+                                color: #77777779;
+                                margin-bottom: -2%;
+                            }
                         }
                     }
 
@@ -256,7 +300,9 @@ main {
                             input[type="email"] {
                                 outline: none;
                                 border: solid 0.1vw #fff;
-                                border-radius: 0.3vw;
+                                border-top: 0;
+                                border-left: 0;
+                                border-right: 0;
                                 background-color: rgba(221, 170, 170, 0);
                                 padding: 4% 3%;
                                 margin-bottom: 10%;
@@ -337,7 +383,9 @@ main {
                             input[type="email"] {
                                 outline: none;
                                 border: solid 0.1vw #fff;
-                                border-radius: 0.3vw;
+                                border-top: 0;
+                                border-left: 0;
+                                border-right: 0;
                                 background-color: rgba(221, 170, 170, 0);
                                 padding: 4% 3%;
                                 margin-bottom: 10%;
